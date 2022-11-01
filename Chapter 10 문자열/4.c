@@ -21,10 +21,17 @@ int main(void)
     int i = 0;
     while (input[i] != '\0')
     {
-        if (bReading == FALSE && input[i] == ' ')
+        if (input[i] == ' ')
         {
-            i++;
-            continue;
+            if (bReading == FALSE)
+            {
+                i++;
+                continue;
+            }
+            else
+            {
+                bReading = FALSE;
+            }
         }
 
         if (input[i] == ' ')
