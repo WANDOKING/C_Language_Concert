@@ -10,7 +10,6 @@
 int main(void)
 {
     char input[MAX];
-    char temp[MAX];
 
     printf("텍스트를 입력하시오: ");
     fgets(input, sizeof(char) * MAX, stdin);
@@ -32,11 +31,6 @@ int main(void)
             {
                 bReading = FALSE;
             }
-        }
-
-        if (input[i] == ' ')
-        {
-            bReading = FALSE;
         }
         else
         {
