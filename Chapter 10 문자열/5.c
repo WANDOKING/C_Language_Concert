@@ -16,7 +16,6 @@ int main(void)
 
     printf("최종 텍스트: ");
 
-    int bReading = TRUE;
     int i = 0;
     while (input[i] != '\0')
     {
